@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'MiFuenteOnePiece';
+    src: url('Fuente/OnePiece.ttf') format('truetype');
+  }
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el contenido */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+}
+
+header {
+    background-color: #cd8b27;
+    font-size: 30px; /* Cambia el tamaño de la letra */
+    padding: 20px;
+    text-align: center;
+    border: #ffffff;
+}
+
+.título-claro {
+    display: none;
+}
+
+#logo {
+    width: 80vw;
+}
+
+.btn {
+    background-color: #007bff;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Para pantalla de escritorio */
+@media screen and (min-width: 800px) {
+    #products {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        width: 50vw;
+    }
+
+    .product-card {
+        width: 300px;
+        height: 350px;
+    }
+
+    .footer {
+        text-align: center;
+        height: 140px;
+    }
+
+    #img-footer{
+        width: 100px;
+        float: right;/* Alinea la imagen a la derecha */
+        max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor padre */
+        display: block !important;
+        padding-right: 10px;
+    }
+    
+}
+
+/* Estilos para las tarjetas de producto */
+.product-card {
+    border: 3px solid #007bff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #ffffff;
+}
+
+.product-card h2 {
+    font-size: 18px;
+}
+
+.product-card span {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+
+.product-card a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    
+}
+
+.product-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #ED2621;
+    color: #fff;
+    font-family: 'MiFuenteOnePiece', sans-serif;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+footer p {
+    display: inline;
+    margin: 0;
+}
+
+#img-footer{
+    display: none
+}
+
+/* Botón Modo oscuro */
+#boton{
+    position: fixed; /* Fija la barra de navegación en la ventana del navegador */
+    top: 10px;
+    right: 10px; /* Coloca la barra de navegación en el lado derecho */
+    border: 3px solid #ffffff;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#boton:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Modo oscuro */
+
+body.dark-mode {
+    color: white;
+}
+
+body.dark-mode #boton {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode #boton:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+body.dark-mode .product-card {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+body.dark-mode .header {
+    background-color: #000000 !important;
+    
+}
+
+body.dark-mode .título {
+    display: none;
+}
+
+body.dark-mode .título-claro {
+    display: inline;
+}
+
+body.dark-mode .footer {
+    background-color: #000000 !important;
+}
+
+/* Estilos para la página de detalles del producto (producto1.html, producto2.html, etc.) */
+/* Puedes agregar estilos específicos para las páginas de detalles de productos aquí */
+
