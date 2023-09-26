@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MiFuenteOnePiece';
-    src: url('Fuente/OnePiece.ttf') format('truetype');
+    src: url('Font/OnePiece.ttf') format('truetype');
   }
 
 /* Estilos generales */
@@ -45,6 +45,11 @@ header {
 
 main {
     padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Para pantalla de escritorio */
@@ -62,9 +67,19 @@ main {
         width: 50vw;
     }
 
+    main {
+        padding: 10px !important;
+        margin: 0px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-evenly !important;
+    }
+
     .product-card {
-        width: 300px;
-        height: 350px;
+        width: 300px !important;
+        height: 350px !important;
+        margin: 10px !important;
     }
 
     .footer {
@@ -82,33 +97,43 @@ main {
     
 }
 
-/* Estilos para las tarjetas de producto */
-.product-card {
-    border: 3px solid #007bff;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.75);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: auto;
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-width: 3px;
-    border-style: dashed;
-    border-color: #ffffff;
-}
-
+    /* Estilos para la tarjeta de producto */
+    .product-card {
+        border: 3px solid #007bff;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.75);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: auto;
+        width: 80vw;
+      }
+  
+      /* Estilos para las imágenes del carrusel */
+      .product-images {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        border-width: 3px;
+        border-style: dashed;
+        border-color: #ffffff;
+        width: 100%;
+      }
+      .product-images img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+      }
+      
 .product-card h2 {
     font-size: 18px;
+    margin-top: 0px;
 }
 
 .product-card span {
@@ -165,6 +190,7 @@ footer p {
     color: white;
     border-radius: 20px;
     cursor: pointer;
+    z-index: 1;
 }
 #boton:hover {
     background-color: #0056b3;
@@ -210,4 +236,3 @@ body.dark-mode .footer {
 
 /* Estilos para la página de detalles del producto (producto1.html, producto2.html, etc.) */
 /* Puedes agregar estilos específicos para las páginas de detalles de productos aquí */
-
